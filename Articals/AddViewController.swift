@@ -54,7 +54,12 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CollectionViewCell
         categorySelected = categoryArr[indexPath.row]
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        return (collectionView.indexPathsForSelectedItems?.count ?? 0) < 2
     }
     
 }

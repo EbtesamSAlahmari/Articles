@@ -80,11 +80,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            context.delete(articels[indexPath.row])
-            articels.remove(at: indexPath.row)
-            self.saveData()
+        let alert = UIAlertController(title: "Delete Article", message: "Are you sure you want delete this article?", preferredStyle: .alert)
+        let deleteBtn = UIAlertAction(title: "Delete", style: .destructive) { alertAction in
+            if editingStyle == .delete {
+                self.context.delete(self.articels[indexPath.row])
+                self.articels.remove(at: indexPath.row)
+                self.saveData()
+            }
         }
+        alert.addAction(deleteBtn)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+        
     }
 }
 
@@ -119,5 +126,8 @@ extension ViewController: UICollectionViewDelegate , UICollectionViewDataSource 
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        return (collectionView.indexPathsForSelectedItems?.count ?? 0) < 2
+    }
     
 }

@@ -13,7 +13,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Articals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Articles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="Da1-ig-Mje" customClass="CategoryCell" customModule="Articals" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="Da1-ig-Mje" customClass="CategoryCell" customModule="Articles" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="5" width="125" height="52"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="G03-Ly-iuS">
@@ -40,7 +40,6 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsn-yU-xLp">
                                                     <rect key="frame" x="0.0" y="0.0" width="125" height="52"/>
-                                                    <color key="backgroundColor" red="0.63137254899999995" green="0.78823529410000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -54,6 +53,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="tsn-yU-xLp" secondAttribute="trailing" id="fwt-b9-cnS"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.63137254899999995" green="0.78823529410000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="125" height="52"/>
                                         <connections>
                                             <outlet property="categoryLbl" destination="tsn-yU-xLp" id="c7h-bk-wYX"/>
@@ -69,7 +69,7 @@
                                 <rect key="frame" x="0.0" y="150" width="414" height="712"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="120" id="haB-es-wlN" customClass="ArticleCell" customModule="Articals" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="120" id="haB-es-wlN" customClass="ArticleCell" customModule="Articles" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="haB-es-wlN" id="Jds-54-dHz">
@@ -143,7 +143,7 @@
         <!--Add View Controller-->
         <scene sceneID="47A-Kh-YSQ">
             <objects>
-                <viewController id="VZQ-ho-fc7" customClass="AddViewController" customModule="Articals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VZQ-ho-fc7" customClass="AddViewController" customModule="Articles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="159-Dc-nW8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,16 +222,15 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="y9k-Ve-eN8" customClass="CollectionViewCell" customModule="Articals" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="y9k-Ve-eN8" customClass="CollectionViewCell" customModule="Articles" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="5" width="100" height="40"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NEf-k0-L4D">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsF-Wx-9aX">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsF-Wx-9aX">
                                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
-                                                                    <color key="backgroundColor" red="0.63137254899999995" green="0.78823529410000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -244,6 +243,7 @@
                                                                 <constraint firstAttribute="trailing" secondItem="VsF-Wx-9aX" secondAttribute="trailing" id="uYH-mr-AE6"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
+                                                        <color key="backgroundColor" red="0.63137254899999995" green="0.78823529410000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <outlet property="categoryLable" destination="VsF-Wx-9aX" id="OIH-zq-Gbd"/>
                                                         </connections>
@@ -298,7 +298,7 @@
         <!--Show View Controller-->
         <scene sceneID="IPZ-Sh-VrL">
             <objects>
-                <viewController id="x35-Xb-9V3" customClass="ShowViewController" customModule="Articals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x35-Xb-9V3" customClass="ShowViewController" customModule="Articles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TRu-Ip-EyD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
